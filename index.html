@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Detection on the Browser</title>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <script src="js/opencv.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="root">
+        <div class="App">      
+            <div class="content">              
+                <video id="video" autoPlay="true" playsInline="true" muted="true"></video>
+                <canvas width="640" height="640"></canvas>
+            </div> 
+        </div>
+    </div>
+    <div>
+    <button id="RUN">Run Inference</button>
+    <button id="STOP">Stop Inference</button>
+    <script src="js/main.js"></script>
+</body>
+</html>
